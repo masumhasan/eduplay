@@ -1,0 +1,56 @@
+/* --- Voice Assistant --- */
+.voice-assistant-gate-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+    padding: 1rem;
+    color: var(--white);
+}
+.voice-assistant-gate-view .card {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+}
+.voice-assistant-gate-view .card svg {
+    width: 64px; height: 64px; color: var(--action-cyan);
+}
+.voice-assistant-gate-view .card p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+}
+.agent-selection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+.agent-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.agent-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+.agent-card-avatar {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.agent-card h3 {
+    font-family: var(--font-family-heading);
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+.agent-card p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
