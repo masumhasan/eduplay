@@ -1,0 +1,54 @@
+/* Drawing Canvas */
+.drawing-canvas-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 0.5rem; 
+}
+.color-palette { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.5rem; 
+    margin-bottom: 0.5rem; 
+}
+.color-palette button { 
+    width: 28px; 
+    height: 28px; 
+    border-radius: 50%; 
+    border: 2px solid var(--white); 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
+    cursor: pointer; 
+    transition: transform 0.2s; 
+}
+.color-palette button.active { 
+    transform: scale(1.2); 
+    border-color: var(--action-cyan); 
+}
+.color-palette .clear-btn { 
+    width: auto; 
+    height: 28px; 
+    padding: 0 1rem; 
+    border-radius: 20px; 
+    background-color: var(--light-gray); 
+    color: var(--text-dark); 
+    font-weight: 600; 
+    font-size: 0.8rem;
+}
+.drawing-canvas { 
+    background-color: var(--white); 
+    border-radius: 12px; 
+    border: 2px solid var(--light-gray); 
+    cursor: crosshair; 
+    max-width: 100%; 
+}
+
+body.dark-mode .drawing-canvas { 
+    background-color: var(--dm-surface2); 
+    border-color: #444; 
+}
+body.dark-mode .color-palette .clear-btn { 
+    background-color: var(--dm-surface2); 
+    color: var(--dm-text-primary); 
+}
